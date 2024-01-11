@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(48, 47, 47);
+    height: 100vh;
+    background-image: url('./assets/myimg.jpg'); /* Add the path to your image */
+    background-size: cover;
+    background-position: center;
     font-family: sans-serif;
- 
+    background-repeat: no-repeat;
+
 }
 a{
     text-decoration: none;
@@ -17,41 +21,42 @@ li{
 }
 /* Navbar Section */
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
-    /* border: 2px solid red; */
     justify-content: space-around;
     align-items: center;
     padding: 10px 10px;
-    /* border-bottom: 2px solid black; */
+
 }
-.navbar .left{
+.left{
     align-items: center;
     gap: 20px;
 }
-.navbar .left img{
+.left img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
 }
-.navbar .left p{
+.left p{
     color: white;
     
 }
 
-.navbar .right ul {
+.right ul {
     align-items: center;
     gap: 10px;
     margin-right: 10px;
 }
-.navbar .right ul li:hover{
-    border-bottom: 2px solid black;
-}
+
 /* Search Bar Button  */
 .search-btn, .close-btn{
     width: 40px;
     height: 40px;
-    background-color: rgb(48, 47, 47);
+    background-color: rgb(22, 22, 22);
     font-size: 25px;
     color: white;
     border:none;
@@ -94,4 +99,23 @@ li{
     z-index: 0;
     transform: translate(253px,2px) scale(1.2);
     background-color: transparent;
+}
+
+/* Hero Section  */
+
+.hero-section{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   padding:258px 208px;
+   /* justify-content: center; */
+}
+.hero-section h1{
+    color: white;
+    font-size: 4rem;
+    text-shadow: 3px 3px 5px rgba(214, 211, 9, 0.7);
+}
+.hero-section p{
+    font-size: 2rem;
+    color: white;
 }
